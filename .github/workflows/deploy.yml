@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 env:
-  DOCKER_IMAGE: yourusername/devops-training
+  DOCKER_IMAGE: nhatminh2005/devops-training
   DEPLOY_HOST: ${{ secrets.DROPLET_IP }}
 
 jobs:
