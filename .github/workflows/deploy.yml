@@ -59,7 +59,7 @@ jobs:
             # Run new container
             docker run -d \
               --name devops-app \
-              -p 808080:8000 \
+              -p 8080:8000 \
               --restart unless-stopped \
               ${{ env.DOCKER_IMAGE }}:latest
 
