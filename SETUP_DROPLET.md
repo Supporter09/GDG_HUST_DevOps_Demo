@@ -61,7 +61,7 @@ cat ~/.ssh/authorized_keys
 ```bash
 # Pull and run your image
 docker pull yourusername/devops-training:latest
-docker run -d --name devops-app -p 80:8000 --restart unless-stopped yourusername/devops-training:latest
+docker run -d --name devops-app -p 8080:8000 --restart unless-stopped yourusername/devops-training:latest
 
 # Check if running
 docker ps
@@ -120,5 +120,5 @@ docker rm devops-app
 ```bash
 docker pull yourusername/devops-training:latest
 docker stop devops-app && docker rm devops-app
-docker run -d --name devops-app -p 80:8000 --restart unless-stopped yourusername/devops-training:latest
+docker run -d --name devops-app -p 8080:8000 --restart unless-stopped yourusername/devops-training:latest
 ```
